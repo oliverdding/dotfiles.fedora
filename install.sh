@@ -39,9 +39,12 @@ echo "##################"
 
 mkdir -p "$HOME"/.ssh
 mkdir -p "$HOME"/.local/share/bash
+mkdir -p "$HOME"/.local/share/fonts
 mkdir -p "$HOME"/.local/share/gnupg
+mkdir -p "$HOME"/.local/share/icons
 mkdir -p "$HOME"/.local/share/ivy2
 mkdir -p "$HOME"/.local/share/pass
+mkdir -p "$HOME"/.local/share/themes
 mkdir -p "$HOME"/.local/share/sbt
 
 chmod 700 $HOME/.ssh

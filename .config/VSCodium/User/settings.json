@@ -9,7 +9,7 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.renderWhitespace": "all",
     "editor.fontFamily": "'JetBrainsMono Nerd Font Mono'",
-    "editor.inlayHints.fontFamily": "FiraCode Nerd Font Mono, JetBrainsMono Nerd Font Mono",
+    "editor.inlayHints.fontFamily": "'FiraCode Nerd Font Mono'",
     "files.eol": "\n",
     "terminal.external.windowsExec": "powershell",
     "terminal.external.linuxExec": "bash",
