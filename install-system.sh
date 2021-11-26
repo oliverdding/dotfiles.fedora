@@ -30,6 +30,7 @@ copy() {
 }
 
 echo -e "\n### copying files"
+copy "etc/dnf/dnf.conf"
 copy "etc/docker/daemon.json"
 copy "etc/yum.repos.d/fedora.repo"
 copy "etc/yum.repos.d/fedora-modular.repo"
