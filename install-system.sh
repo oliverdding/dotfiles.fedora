@@ -37,21 +37,13 @@ copy "etc/yum.repos.d/fedora-modular.repo"
 copy "etc/yum.repos.d/fedora-updates.repo"
 copy "etc/yum.repos.d/fedora-updates-modular.repo"
 
-copy "usr/share/backgrounds/ZorinMountain"
-copy "usr/share/backgrounds/ZorinMountain.xml"
-copy "usr/share/gnome-background-properties/ZorinMountain.xml"
-
 echo -e "\n### configuring system"
 echo ${V_HOSTNAME} >/etc/hostname
 
-chown -R "$USER":"$USER" /usr/share/backgrounds/ZorinMountain
-chown -R "$USER":"$USER" /usr/share/backgrounds/ZorinMountain.xml
-chown -R "$USER":"$USER" /usr/share/gnome-background-properties/ZorinMountain.xml
-
 dnf makecache
-dnf install git starship git-delta exa bash-completion ripgrep neovim docker
-dnf install gcc gdb go python python-setuptools python-pip python-pipenv java-1.8.0-openjdk-devel rust cargo 
-dnf install wqy-microhei-fonts wqy-zenhei-fonts
+dnf -qyinstall git starship git-delta exa bash-completion ripgrep neovim docker
+dnf -qy install gcc gdb go python python-setuptools python-pip python-pipenv java-1.8.0-openjdk-devel rust cargo 
+dnf -qy install wqy-microhei-fonts wqy-zenhei-fonts
 
 echo -e "\n### configuring user"
 for GROUP in wheel network video input docker; do
